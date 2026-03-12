@@ -9,6 +9,8 @@ star or snowflake schemas, and often rely on column-oriented storage to efficien
 
 These systems enable organizations to uncover trends, patterns, and insights that help guide strategic decisions.
 
+
+---
 ### Key Characteristics :
 #### Analytical Workloads :
 
@@ -48,6 +50,7 @@ monthly sales trends.
 OLAP systems focus on long-term data storage and analysis rather than real-time transaction processing. They enable organizations to analyze 
 trends over weeks, months, or years.
 
+---
 #### Common OLAP Systems :
 
 Examples of widely used OLAP databases and data warehouses include:
@@ -59,6 +62,7 @@ Examples of widely used OLAP databases and data warehouses include:
   * ClickHouse
   * Apache Druid
 
+---
 #### Typical Use Cases
 
 OLAP systems are widely used for:
