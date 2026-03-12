@@ -6,7 +6,7 @@ In OLAP (Online Analytical Processing) systems, data is organized using dimensio
   * Star Schema
   * Snowflake Schema
   * Galaxy Schema (Fact Constellation)
-
+---
 ### 1.Star Schema
 The Star Schema is the most common OLAP schema. It has a central fact table connected directly to dimension tables.
 
@@ -39,7 +39,7 @@ The Star Schema is the most common OLAP schema. It has a central fact table conn
      JOIN Dim_Product p
      ON f.product_id = p.product_id
      GROUP BY p.category;
-
+---
 ### 2.Snowflake Schema
 The Snowflake Schema is a normalized version of the Star Schema. Dimension tables are split into multiple related tables.
 
@@ -62,7 +62,7 @@ The Snowflake Schema is a normalized version of the Star Schema. Dimension table
   * Disadvantages:
       * More complex queries
       * Slightly slower analytics queries
-   
+---  
 ### 3. Galaxy Schema (Fact Constellation)
 A Galaxy Schema contains multiple fact tables sharing dimension tables.
 Used when analyzing multiple business processes.
@@ -87,7 +87,7 @@ Used when analyzing multiple business processes.
   * Disadvantages:
       * More complex design
       * Requires careful modeling
-
+---
 ### Real-World Example
   * Star schema : One fact table and denormalised dim tables
     >Fact_Orders -> Dim_Customer, Dim_Product, Dim_Date, Dim_Store
